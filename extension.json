@@ -1,0 +1,26 @@
+{
+    "name": "Inject AMSI Bypass",
+    "version": "v0.0.0",
+    "command_name": "inject-amsi-bypass",
+    "extension_author": "@moloch--",
+    "original_author": "@boku7",
+    "repo_url": "https://github.com/sliverarmory/injectAmsiBypass",
+    "help": "Beacon Object File (BOF) that bypasses AMSI in a remote process with code injection.",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "inject-amsiBypass.x64.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "pid",
+        "desc": "The PID of the process you want to inject the bypass into.",
+        "type": "int",
+        "optional": false
+      }
+    ]
+  }
