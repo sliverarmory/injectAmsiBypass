@@ -36,7 +36,7 @@ jobs:
 
     - name: Build Package
       run: |
-        x86_64-w64-mingw32-gcc -c inject-amsiBypass.c -o ./compiled/inject-amsiBypass.o
+        x86_64-w64-mingw32-gcc -c inject-amsiBypass.c -o ./compiled/inject-amsiBypass.amd64.o
         rm -f ./compiled/.gitkeep
         VERSION=$(git describe --tags --abbrev=0)
         cat extension.json | jq ".version |= \"$VERSION\"" > ./compiled/extension.json

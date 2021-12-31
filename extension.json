@@ -12,7 +12,7 @@
       {
         "os": "windows",
         "arch": "amd64",
-        "path": "inject-amsiBypass.x64.o"
+        "path": "inject-amsiBypass.amd64.o"
       }
     ],
     "arguments": [
@@ -23,4 +23,4 @@
         "optional": false
       }
     ]
-  }
+}
